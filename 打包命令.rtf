@@ -1,0 +1,63 @@
+{\rtf1\ansi\ansicpg936\cocoartf1671
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;\f1\fnil\fcharset134 PingFangSC-Regular;\f2\fnil\fcharset0 Menlo-Regular;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red155\green162\blue177;\red30\green33\blue39;
+\red184\green14\blue61;\red244\green244\blue244;}
+{\*\expandedcolortbl;;\csgray\c0;\cssrgb\c67059\c69804\c74902;\cssrgb\c15686\c17255\c20392;
+\cssrgb\c78039\c14510\c30588;\cssrgb\c96471\c96471\c96471;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww16080\viewh7800\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl-380\pardirnatural\partightenfactor0
+
+\f0\fs26 \cf2 xcodebuild clean -configuration Debug -UseNewBuildSyetem=NO\
+xcodebuild clean -configuration Debug -UseNewBuildSystem=NO\
+xcodebuild clean -project GomeShop.xcodeproj  -target  GomeShop -scheme GomeShop -configuration Debug -UseNew\
+\
+\
+\
+
+\f1 \'c7\'e5\'c0\'ed
+\f0 \
+xcodebuild clean -workspace GomeShop.xcworkspace -scheme  GomeShop -configuration Debug  -UseNewBuildSystem=NO\
+ 
+\f1 \'b4\'f2\'b0\'fc
+\f0 \
+xcodebuild archive -workspace  GomeShop.xcworkspace -scheme  GomeShop -configuration Release -archive_path=/Users/xiaofeiniao/Desktop\
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f2 \cf3 \cb4 \expnd0\expndtw0\kerning0
+CODE_SIGN_IDENTITY=\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl-380\pardirnatural\partightenfactor0
+
+\f0 \cf2 \cb1 \kerning1\expnd0\expndtw0 \
+\
+xcodebuild archive -workspace  GomeShop.xcworkspace -scheme  GomeShop -configuration Release -archive_path=/Users/xiaofeiniao/Desktop/TestArchive  CODE_SIGN_IDENTITY=Xin rui mei e-commerce Co., Ltd. PROVISIONING_PROFILE=c7ec43dc-a544-4f84-b787-a86ff8770a65 -quiet\
+\
+\
+\
+xcodebuild archive -workspace  GomeShop.xcworkspace -scheme GomeShop -configuration Release -archivePath "~/Desktop/GomeShop.xcarchive"\
+\pard\pardeftab720\sl300\partightenfactor0
+
+\f2 \cf5 \cb6 \expnd0\expndtw0\kerning0
+-exportArchive
+\f0 \cf2 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl-380\pardirnatural\partightenfactor0
+xcodebuild -exportArchive -archivePath \'93~/Desktop/GomeShop.xcarchive\'94 -exportPath \'93~/Desktop/GomeShop.ipa\'94 -exportFormat IPA\
+\
+xcodebuild archive -workspace GomeShop.xcworkspace -scheme GomeShop -configuration Release -archivePath \'91~/Desktop/GomeShop.xcarchive\'92 CODE_SIGN_IDENTITY =\'93iPhone Distribution: Xin rui mei e-commerce Co., Ltd. (KYACQ4K486)\'94 PROVISIONING_PROFILE=\'93c7ec43dc-a544-4f84-b787-a86ff8770a65\'94\
+\
+xcodebuild -exportArchive  -archivePath \'93~/Desktop/TestArchive/GomeShop.xcarchive\'94 -exportPath \'93~/Desktop/TestArchive
+\f1 /
+\f0 GomeShop.ipa\'94 -exportOptionsPlist \'93~/Desktop/TestArchive/exprotOptionsPlist.plist\'94\
+\
+\
+\
+xcodebuild -exportArchive  -archivePath "~/Desktop/TestArchive/GomeShop.xcarchive" -exportPath "~/Desktop/TestArchive/GomeShop.ipa" -exportOptionsPlist "./TestArchive/exprotOptionsPlist.plist"  CODE_SIGN_IDENTITY="iPhone Distribution: Xin rui mei e-commerce Co., Ltd. (KYACQ4K486)"  PROVISIONING_PROFILE="c7ec43dc-a544-4f84-b787-a86ff8770a65" -quiet -UseNewBuildSystem=NO\
+\
+
+\f1 \'b7\'c7
+\f0 workspace
+\f1 \'b3\'d0\'d4\'d8\'b5\'c4\'cf\'ee\'c4\'bf\
+\
+xcodebuild clean -project TargetTest.xcodeproj -scheme TargetTest -configuration Debug  -quiet 
+\f0 \
+}
